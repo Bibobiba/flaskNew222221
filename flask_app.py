@@ -18,7 +18,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 app.config.update(dict(DATABASE=os.path.join(app.root_path, 'fdb.db')))
 app.permanent_session_lifetime = datetime.timedelta(seconds=60)
-
+#321415
 
 def connect_db():
     conn = sqlite3.connect(app.config['DATABASE'])
